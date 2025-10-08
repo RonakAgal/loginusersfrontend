@@ -33,7 +33,8 @@ const Signup = () => {
       }
     } catch (error) {
       console.log("Error While Registering");
-      toast.error(error.response.data.message);
+      console.log(error)
+      // toast.error(error.response.data.message);
       
       
     }

@@ -30,6 +30,7 @@ const Signup = () => {
       );
       if(response.data.success){
         toast.success(response.data.message)
+        navigate("/login");
       }
     } catch (error) {
       console.log("Error While Registering");
